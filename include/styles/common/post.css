@@ -1,0 +1,6 @@
+/* 
+GSA WEB Proyect -- v2.0 
+Author: Carlos Padilla (cpadlab) -- https://github.com/cpadlab
+Proyect: https://github.com/gsalhawd/gsalhawd.github.io
+*/  
+.bcp-info h3,.bcp-info span{margin-bottom:.5em}#bcp-info-link,.bcp-info h2{cursor:pointer}.blog-content{margin-top:2em;margin-bottom:2em;display:flex;flex-wrap:wrap;gap:2em;justify-content:center;text-align:left}.post{border:3px solid var(--light);border-radius:5px;max-width:500px;overflow:hidden;background:var(--light)}.bcp-banner{width:500px;height:300px;overflow:hidden;background-size:cover}.bcp-info{color:var(--dark);padding:1em}.bcp-info h2:hover{text-decoration:underline}.bcp-info h3{font-weight:400;margin-top:.5em}#bcp-info-link{color:var(--dark);text-decoration:none;padding:.5em 1em;border:1px solid var(--primary);background:0 0;border-radius:5px;transition:var(---default-transition-02)}#bcp-info-link:hover{background:var(--primary);color:var(--light)}

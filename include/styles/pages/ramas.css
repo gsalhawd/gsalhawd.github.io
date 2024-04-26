@@ -1,0 +1,6 @@
+/* 
+GSA WEB Proyect -- v2.0 
+Author: Carlos Padilla (cpadlab) -- https://github.com/cpadlab
+Proyect: https://github.com/gsalhawd/gsalhawd.github.io
+*/
+#home h1,.rc-info h1{font-size:2rem;text-transform:uppercase}#castores,#kraal,#lobatos,#rangers,#rutas{display:flex;align-items:center;justify-content:center;padding:1em}.rama-content{display:flex;justify-content:center;gap:2em}.rc-info{max-width:500px;text-align:left}.rc-info img{width:5em;margin-bottom:.5em}.rc-info h1{margin-bottom:.3em}.rc-info h2{font-size:1.7rem;font-weight:400;margin-bottom:.3em}.rc-info p{font-size:1.3rem}.rm-image{width:30em;height:fill;background-size:cover;border-radius:5px}.rci-left{text-align:right}.rci-img{display:flex;align-items:center;justify-content:right;gap:1em}#home h1{text-align:center;padding:1em}#rci-p{padding-bottom:1em}.rc-info a{border:1px solid var(--primary);padding:.5em 1em;border-radius:5px;text-decoration:none;color:var(--primary);transition:var(---default-transition-03)}.rc-info a:hover{color:var(--light);background:var(--primary)}@media screen and (max-width:900px){.rama-content{flex-direction:column-reverse;width:100%;align-items:center}.rm-image{height:30em;width:100%}.rci-img{justify-content:center}.rc-info{text-align:center}.rc-info p{text-align:left}.rc-top{flex-direction:column}}

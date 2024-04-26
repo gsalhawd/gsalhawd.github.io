@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /index.html
+Allow: /about/
+Allow: /author/
+Allow: /blog/
+Allow: /contact/
+Disallow: /include/
+Allow: /nuestras-ramas/
+Allow: /post/
