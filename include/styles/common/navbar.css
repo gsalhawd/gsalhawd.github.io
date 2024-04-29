@@ -4,3 +4,9 @@ Author: Carlos Padilla (cpadlab) -- https://github.com/cpadlab
 Proyect: https://github.com/gsalhawd/gsalhawd.github.io
 */  
 .hidden-header,header{position:fixed;width:100%}#hh-toggle-close,#hn-middle a,.hidden-header{transition:var(---default-transition-02)}#hh-toggle-close,#hn-middle a,header *{color:var(--light)}#hh-middle-nav a,#hn-middle a{padding:.3em .5em;border-radius:5px}#hn-middle a,#hnm-2 a{text-decoration:none}#hhbn-facebook,#hhbn-instagram,#hnm-2 a{margin-left:.5em}#hh-toggle-close,#hnr-toggle{background:0 0;border:0;cursor:pointer}header{display:flex;justify-content:space-between;align-items:center;padding:1em 2em;background:var(--primary-08);z-index:11}#hn-middle a:hover{background:var(--light);color:var(--primary)}.hidden-header{display:none;opacity:0;top:50%;left:0;height:100%;z-index:111;background:var(--primary-07)}#hh-toggle-close,.hh-logo{position:absolute;top:1em}#hh-toggle-close{font-size:1.3rem;right:1em}#hh-toggle-close:hover{transform:rotate(90deg)}#hh-middle-nav{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;flex-direction:column}#hh-bottom-nav a,#hh-middle-nav a{color:var(--light);text-decoration:none}#hh-middle-nav a{margin-top:.5em;font-size:1.3rem;transition:var(---default-transition-03)}#hh-middle-nav a:hover{background:var(--primary)}#hhm-inicio{margin-top:unset}#hh-bottom-nav{text-align:center;position:absolute;bottom:1em;left:50%;transform:translateX(-50%)}#hh-bottom-nav div{margin-bottom:.5em}.hh-logo{left:1em;background:var(--light);padding:.5em;border-radius:5px}.hh-logo img{width:5em}#hn-left img{width:3em}#hnm-2{display:none}#hnm-2 img{height:1.5em}#hnm-2 a:first-child{margin-left:unset}@media screen and (max-width:580px){#hn-middle{display:none}#hnm-2{display:block}}@media screen and (max-width:315px){#hnm-2{display:none}}
+#hn-middle > a i {
+    transition: var(---default-transition-03);
+}
+#hn-middle > a:hover i {
+    color: var(--primary);
+}
