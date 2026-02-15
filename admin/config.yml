@@ -1,0 +1,43 @@
+backend:
+  name: github
+  repo: gsalhawd/gsalhawd.github.io
+  branch: main
+
+media_folder: "assets/img/uploads"
+public_folder: "/assets/img/uploads"
+
+collections:
+  - name: "home"
+    label: "Inicio"
+    folder: "content/home"
+    create: false
+    fields:
+      - { name: "title", label: "Título principal", widget: "string" }
+      - { name: "subtitle", label: "Subtítulo", widget: "string" }
+      - { name: "hero_image", label: "Imagen principal", widget: "image" }
+
+  - name: "about"
+    label: "Sobre nosotros"
+    folder: "content/about"
+    create: false
+    fields:
+      - { name: "heading", label: "Encabezado", widget: "string" }
+      - { name: "body", label: "Contenido", widget: "markdown" }
+
+  - name: "services"
+    label: "Servicios"
+    folder: "content/services"
+    create: true
+    fields:
+      - { name: "title", label: "Título del servicio", widget: "string" }
+      - { name: "description", label: "Descripción", widget: "text" }
+      - { name: "icon", label: "Icono", widget: "string" }
+
+  - name: "team"
+    label: "Equipo"
+    folder: "content/team"
+    create: true
+    fields:
+      - { name: "name", label: "Nombre", widget: "string" }
+      - { name: "role", label: "Cargo", widget: "string" }
+      - { name: "photo", label: "Foto", widget: "image" }
