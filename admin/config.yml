@@ -17,16 +17,16 @@ collections:
       - { name: "hero_image", label: "Imagen principal", widget: "image" }
 
   - name: "about"
-    label: "Sobre nosotros"
+    label: "El grupo"
     folder: "content/about"
     create: false
     fields:
       - { name: "heading", label: "Encabezado", widget: "string" }
       - { name: "body", label: "Contenido", widget: "markdown" }
 
-  - name: "services"
-    label: "Servicios"
-    folder: "content/services"
+  - name: "branches"
+    label: "Nuestras ramas"
+    folder: "content/branches"
     create: true
     fields:
       - { name: "title", label: "Título del servicio", widget: "string" }
