@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  
+  <link href="/include/styles/common/main.css" rel="stylesheet">
+  <link href="/include/styles/common/navbar.css" rel="stylesheet">
+  <link href="/include/styles/common/post.css" rel="stylesheet">
+  <link href="/include/styles/common/footer.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="/include/styles/pages/index/home.css" rel="stylesheet">
+  <link href="/include/styles/pages/index/banners.css" rel="stylesheet">
+  <link href="/include/styles/pages/index/about.css" rel="stylesheet">
+  <link href="/include/styles/pages/index/branches.css" rel="stylesheet">
+  <link href="/include/styles/pages/index/blog.css" rel="stylesheet">
+  <link href="/include/styles/pages/index/photogallery.css" rel="stylesheet">
+
+  <title>{{ page.title }} | Grupo Scout Al-Hawd</title>
+  <meta content="{{ page.description | default: 'Grupo Scout Al-Hawd - MSC Almería' }}" name="description">
+  
+  <link href="/include/assets/logo-light.svg" rel="icon">
+</head>
+<body>
+
+  <header>
+    <nav id="hn-left"><img src="/include/assets/logo-light.svg" alt="Logo Color Blanco"></nav>
+    <nav id="hn-middle">
+      <a href="/#home">Inicio</a> 
+      <a href="/#about">El Grupo</a> 
+      <a href="/#branches">Nuestras Ramas</a> 
+      <a href="/#blog">Blog</a> 
+      <a href="/#photogallery">Fotogalería</a>
+    </nav>
+    <nav id="hn-right">
+      <button id="hnr-toggle"><i class="fa-solid fa-bars"></i></button>
+    </nav>
+  </header>
+
+  <div class="hidden-header" id="hidden-header">
+    <button id="hh-toggle-close"><i class="fa-solid fa-xmark"></i></button>
+    <div class="hh-logo"><img src="/include/assets/logo.svg" alt="Logo"></div>
+    <nav id="hh-middle-nav">
+      <a href="/">Inicio</a> 
+      <a href="/about">El Grupo</a> 
+      <a href="/nuestras-ramas/">Nuestras Ramas</a> 
+      <a href="/blog/">Blog</a> 
+      <a href="/contact/">Contacto</a>
+    </nav>
+  </div>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <nav id="fn-top"><img src="/include/assets/logo.svg"></nav>
+    <nav id="fn-middle">
+      <div>
+        <a href="tel:" id="fnm-phone"><i class="fa-solid fa-phone"></i></a>
+        <a href="" id="fnm-instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="" id="fnm-facebook"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </nav>
+    <nav id="fn-bottom">
+      <a href="/">Inicio</a> 
+      <a href="/about">El Grupo</a> 
+      <a href="/nuestras-ramas">Nuestras Ramas</a> 
+      <a href="/blog/">Blog</a> 
+      <a href="/contact">Contacto</a>
+    </nav>
+  </footer>
+
+  <script src="/include/lib/jquery-3.7.1.min.js"></script>
+  <script src="/include/scripts/common/navbar.js"></script>
+  <script src="/include/scripts/pages/index.js" type="module"></script>
+</body>
+</html>
