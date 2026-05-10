@@ -1,0 +1,8 @@
+title: Grupo Scout Al-Hawd
+description: Sitio web gestionado por CMS
+remote_theme: jekyll/minima # Un tema básico de respaldo
+collections:
+  posts:
+    output: true
+  ramas:
+    output: true
