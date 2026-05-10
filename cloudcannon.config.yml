@@ -1,14 +1,108 @@
 paths:
-  static: ''
   uploads: include/assets/uploads
+  static: ''
+collections_config:
+  pages:
+    path: ''
+    icon: wysiwyg
+    disable_url: false
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  drafts:
+    path: _drafts
+    icon: event
+    disable_url: false
+    _inputs:
+      categories:
+        type: multiselect
+        options:
+          allow_create: true
+          allow_empty: true
+          values: collections.posts[*].categories
+        cascade: true
+      tags:
+        type: multiselect
+        options:
+          allow_create: true
+          allow_empty: true
+          values: collections.posts[*].tags
+        cascade: true
+    create:
+      publish_to: posts
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  posts:
+    path: _posts
+    name: Prueba
+    icon: event_available
+    disable_url: false
+    description: Probando
+    preview:
+      text:
+        - text: Prueba
+      subtext:
+      icon:
+        - text: 11mp
+      icon_color:
+      icon_background_color:
+      image:
+      metadata:
+      gallery:
+    _inputs:
+      categories:
+        type: multiselect
+        options:
+          allow_create: true
+          allow_empty: true
+          values: collections.posts[*].categories
+        cascade: true
+      tags:
+        type: multiselect
+        options:
+          allow_create: true
+          allow_empty: true
+          values: collections.posts[*].tags
+        cascade: true
+    add_options:
+      - name: Add Post
+      - name: Add Draft
+        collection: drafts
+    create:
+      path: >-
+        [relative_base_path]/{date|year}-{date|month}-{date|day}-{title|slugify}.[ext]
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+  ramas:
+    path: _ramas
+    icon: radar
+    disable_url: false
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+_snippets_imports:
+  jekyll: true
 timezone: Europe/Madrid
 markdown:
   engine: kramdown
   options:
-    heading_ids: false
-    gfm: false
+    xhtml: false
     breaks: false
+    linkify: false
     typographer: false
+    spaced_lists: false
+    sentence_per_line: false
+    gfm: false
+    code_block_fences: '```'
+    escape_snippets_in_code_blocks: false
+    treat_indentation_as_code: true
+    table: false
+    strikethrough: false
+    subscript: false
+    superscript: false
+    heading_ids: false
     attributes: true
     attribute_elements:
       inline: right
@@ -16,50 +110,3 @@ markdown:
       tr: none
       td: none
       li: right-of-prefix
-    treat_indentation_as_code: true
-_snippets_imports:
-  jekyll: true
-collections_config:
-  pages:
-    path: ''
-    icon: wysiwyg
-  drafts:
-    path: _drafts
-    icon: event
-    create:
-      publish_to: posts
-    _inputs:
-      categories:
-        type: multiselect
-        options:
-          values: collections.posts[*].categories
-          allow_create: true
-      tags:
-        type: multiselect
-        options:
-          values: collections.posts[*].tags
-          allow_create: true
-  posts:
-    path: _posts
-    icon: event_available
-    create:
-      path: >-
-        [relative_base_path]/{date|year}-{date|month}-{date|day}-{title|slugify}.[ext]
-    _inputs:
-      categories:
-        type: multiselect
-        options:
-          values: collections.posts[*].categories
-          allow_create: true
-      tags:
-        type: multiselect
-        options:
-          values: collections.posts[*].tags
-          allow_create: true
-    add_options:
-      - name: Add Post
-      - name: Add Draft
-        collection: drafts
-  ramas:
-    path: _ramas
-    icon: radar
