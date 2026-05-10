@@ -1,0 +1,54 @@
+backend:
+  name: github
+  repo: gsalhawd/gsalhawd.github.io
+  branch: main
+
+media_folder: "include/assets/uploads"
+public_folder: "/include/assets/uploads"
+
+collections:
+  # 1. GESTIÓN DE LAS RAMAS (Castores, Lobatos, etc.)
+  - name: "ramas"
+    label: "Nuestras Ramas"
+    folder: "_ramas"
+    create: true
+    fields:
+      - { label: "Nombre de la Rama", name: "title", widget: "string" }
+      - { label: "Imagen del Icono", name: "icon", widget: "image" }
+      - { label: "Color Identificativo", name: "color", widget: "color" }
+      - { label: "Descripción/Tooltip", name: "body", widget: "text" }
+      - { label: "Enlace a sección", name: "url", widget: "string", default: "#" }
+
+  # 2. GESTIÓN DEL BLOG
+  - name: "blog"
+    label: "Noticias y Eventos"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Fecha", name: "date", widget: "datetime" }
+      - { label: "Imagen de Portada", name: "image", widget: "image" }
+      - { label: "Resumen corto", name: "description", widget: "text" }
+      - { label: "Contenido completo", name: "body", widget: "markdown" }
+
+  # 3. PÁGINAS ESTÁTICAS (Inicio y Sobre el Grupo)
+  - name: "paginas"
+    label: "Páginas del Sitio"
+    files:
+      - label: "Sobre el Grupo (Historia)"
+        name: "about"
+        file: "content/about.md"
+        fields:
+          - { label: "Título de Sección", name: "title", widget: "string", default: "El Grupo" }
+          - { label: "Imagen de la izquierda", name: "image", widget: "image" }
+          - { label: "Historia del Grupo", name: "body", widget: "markdown" }
+
+      - label: "Datos de Contacto (Footer)"
+        name: "contacto"
+        file: "_data/contacto.yml" # Esto crea un archivo de datos centralizado
+        fields:
+          - { label: "Teléfono", name: "phone", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Instagram (URL)", name: "instagram", widget: "string" }
+          - { label: "Facebook (URL)", name: "facebook", widget: "string" }
